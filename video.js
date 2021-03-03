@@ -9,7 +9,7 @@ var aiEnabled = false;
 var fps = 16;
 
 /* Setting up the constraint */
-var facingMode = "environment"; // Can be 'user' or 'environment' to access back or front camera (NEAT!)
+var facingMode = "user"; // Can be 'user' or 'environment' to access back or front camera (NEAT!)
 var constraints = {
     audio: false,
     video: {
