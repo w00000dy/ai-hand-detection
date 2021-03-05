@@ -41,6 +41,9 @@
     </tr>
   </table>
 
+  <!-- is needed to prevent lag at first predict -->
+  <img src="tmp.png" id="img" style="display: none;">
+
   <script>
     var modelIsLoaded = false;
 
@@ -49,8 +52,14 @@
 
     // When the model is loaded
     function modelLoaded() {
-      console.log("Model Loaded!");
-      modelIsLoaded = true;
+      let img = document.getElementById("img");
+
+      handpose.predict(img, results => {
+        console.log(results)
+        console.log("Model Loaded!");
+        modelIsLoaded = true;
+      });
+
     }
   </script>
   <script src="video.js"></script>
