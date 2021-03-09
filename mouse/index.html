@@ -15,7 +15,8 @@
   <!-- video with size of 0px because of chrome -->
   <video playsinline autoplay muted controls="true" id="video"></video>
   <br><br>
-  <canvas id="c1"></canvas>
+  <canvas id="c1" class="mirror"></canvas>
+  <canvas id="mouse" class="mouse"></canvas>
   <br><br>
   <table>
     <tr>
@@ -32,6 +33,14 @@
       </td>
     </tr>
     <tr>
+      <td>Border:</td>
+      <td>
+        <p class="range-field">
+          <input type="range" id="border" min="0" max="500" value="200" step="100">
+        </p>
+      </td>
+    </tr>
+    <tr>
       <td>FPS:</td>
       <td>
         <p class="range-field">
@@ -42,7 +51,7 @@
   </table>
 
   <!-- is needed to prevent lag at first predict -->
-  <img src="mouse/pointer.png" id="img" style="display: none;">
+  <img src="pointer.png" id="img" style="display: none;">
 
   <script>
     var modelIsLoaded = false;
