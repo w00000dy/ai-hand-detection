@@ -93,9 +93,11 @@ function toggleAi() {
 }
 
 function lockCheck() {
-    if (document.pointerLockElement !== c1) {
-        document.getElementById("ai").checked = false;
-        toggleAi();
+    if (!/Mobi|Android/i.test(navigator.userAgent)) {
+        if (document.pointerLockElement !== c1) {
+            document.getElementById("ai").checked = false;
+            toggleAi();
+        }
     }
 }
 
@@ -115,7 +117,7 @@ function setFakeMouse(x, y) {
     x = cMouse.width * x;
     x = cMouse.width - x; // mirror
     y = cMouse.height * y;
-    console.log("x: " + x + " - y: " + y);
+    // console.log("x: " + x + " - y: " + y);
     let img = new Image;
     img.src = "pointer.png";
     ctxMouse.drawImage(img, x, y, img.width * 0.5, img.height * 0.5);
