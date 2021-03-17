@@ -16,3 +16,7 @@ tr, td {
     border: 0px;
     text-align: center; 
 }
+
+.mirror {
+    transform: scaleX(-1);
+}
