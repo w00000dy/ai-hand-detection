@@ -9,6 +9,9 @@ This is a web AI hand detection. You can use it in your web browser. This web ap
 - ✅ Mouse example to show a possible usage case
 - ✅ Configurable border in mouse example
 
+## 🖼️ Images
+<a href="https://ibb.co/T15LJDH"><img src="https://i.ibb.co/Vx8mb0v/Screenshot-2021-04-08-AI-hand-detection.png" alt="live AI-hand-detection"></a>
+
 ## 💪 Try it
 If you are not convinced yet just try it out here: https://woody.pizza/tensorflow/hand-detection/
 
