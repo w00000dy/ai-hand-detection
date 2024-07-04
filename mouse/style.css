@@ -12,9 +12,10 @@ table {
     margin: auto;
 }
 
-tr, td {
+tr,
+td {
     border: 0px;
-    text-align: center; 
+    text-align: center;
 }
 
 .mouse {
